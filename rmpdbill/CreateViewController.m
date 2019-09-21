@@ -9,7 +9,7 @@
 #import "CreateViewController.h"
 #import "ZXingObjC.h"
 
-@interface CreateViewController ()
+@interface CreateViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
 @property (weak, nonatomic) IBOutlet UITextField *phoneTextField;
@@ -25,14 +25,14 @@
 }
 
 - (IBAction)didTapGenerateQRCode:(id)sender {
-    NSDictionary *customerInfo = @{@"name": self.nameTextField.text, @"email": self.emailTextField.text, @"phone": self.phoneTextField.text};
+    NSString *customerInfo = [NSString stringWithFormat:@"%@, %@, %@", self.nameTextField.text, self.emailTextField, self.phoneTextField];
     
     NSError *error = nil;
     ZXMultiFormatWriter *writer = [ZXMultiFormatWriter writer];
     ZXBitMatrix* result = [writer encode:[NSString stringWithFormat:@"%@", customerInfo]
                                   format:kBarcodeFormatQRCode
-                                   width:500
-                                  height:500
+                                   width:700
+                                  height:700
                                    error:&error];
     if (result) {
         CGImageRef imageRef = CGImageRetain([[ZXImage imageWithMatrix:result] cgimage]);
@@ -47,9 +47,23 @@
 }
 
 - (IBAction)didTapScanner:(id)sender {
+    UIImagePickerController *imagePickerVC = [UIImagePickerController new];
+    imagePickerVC.delegate = self;
+    imagePickerVC.allowsEditing = YES;
+    
+    imagePickerVC.sourceType = UIImagePickerControllerSourceTypeCamera;
+    [self presentViewController:imagePickerVC animated:YES completion:nil];
 }
 
 - (IBAction)didTapLogout:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info {
+    UIImage *selectedImage = info[UIImagePickerControllerOriginalImage];
+    [self.codeQR setImage:selectedImage];
+    
+    
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
