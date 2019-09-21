@@ -10,6 +10,7 @@
 		362F0F9E5163A3E576CC6D6E /* Pods_rmpdbill.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF429FB718E49621E8FFB844 /* Pods_rmpdbill.framework */; };
 		7B2D47F52336D1D5002D0928 /* Create.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B2D47F42336D1D5002D0928 /* Create.storyboard */; };
 		8106EC6F23369C3600F2C996 /* BillAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8106EC6E23369C3600F2C996 /* BillAPIManager.m */; };
+		8106EC972336D5CC00F2C996 /* CreateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8106EC962336D5CC00F2C996 /* CreateViewController.m */; };
 		8183FD972335EAC10052CB2A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8183FD962335EAC10052CB2A /* AppDelegate.m */; };
 		8183FD9A2335EAC10052CB2A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8183FD992335EAC10052CB2A /* ViewController.m */; };
 		8183FD9D2335EAC10052CB2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8183FD9B2335EAC10052CB2A /* Main.storyboard */; };
@@ -22,6 +23,8 @@
 		7B2D47F42336D1D5002D0928 /* Create.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Create.storyboard; sourceTree = "<group>"; };
 		8106EC6D23369C3600F2C996 /* BillAPIManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BillAPIManager.h; sourceTree = "<group>"; };
 		8106EC6E23369C3600F2C996 /* BillAPIManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BillAPIManager.m; sourceTree = "<group>"; };
+		8106EC952336D5CC00F2C996 /* CreateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreateViewController.h; sourceTree = "<group>"; };
+		8106EC962336D5CC00F2C996 /* CreateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreateViewController.m; sourceTree = "<group>"; };
 		8183FD922335EAC10052CB2A /* rmpdbill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rmpdbill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8183FD952335EAC10052CB2A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8183FD962335EAC10052CB2A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -79,6 +82,8 @@
 				8183FD982335EAC10052CB2A /* ViewController.h */,
 				8183FD992335EAC10052CB2A /* ViewController.m */,
 				7B2D47F42336D1D5002D0928 /* Create.storyboard */,
+				8106EC952336D5CC00F2C996 /* CreateViewController.h */,
+				8106EC962336D5CC00F2C996 /* CreateViewController.m */,
 				8183FD9B2335EAC10052CB2A /* Main.storyboard */,
 				8183FD9E2335EAC20052CB2A /* Assets.xcassets */,
 				8183FDA02335EAC20052CB2A /* LaunchScreen.storyboard */,
@@ -252,6 +257,7 @@
 			files = (
 				8183FD9A2335EAC10052CB2A /* ViewController.m in Sources */,
 				8183FDA52335EAC20052CB2A /* main.m in Sources */,
+				8106EC972336D5CC00F2C996 /* CreateViewController.m in Sources */,
 				8183FD972335EAC10052CB2A /* AppDelegate.m in Sources */,
 				8106EC6F23369C3600F2C996 /* BillAPIManager.m in Sources */,
 			);
