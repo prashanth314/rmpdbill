@@ -6,5 +6,6 @@ target 'rmpdbill' do
   use_frameworks!
 
   # Pods for rmpdbill
+  pod 'AFNetworking'
 
 end

@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		362F0F9E5163A3E576CC6D6E /* Pods_rmpdbill.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF429FB718E49621E8FFB844 /* Pods_rmpdbill.framework */; };
+		8106EC6F23369C3600F2C996 /* BillAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8106EC6E23369C3600F2C996 /* BillAPIManager.m */; };
 		8183FD972335EAC10052CB2A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8183FD962335EAC10052CB2A /* AppDelegate.m */; };
 		8183FD9A2335EAC10052CB2A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8183FD992335EAC10052CB2A /* ViewController.m */; };
 		8183FD9D2335EAC10052CB2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8183FD9B2335EAC10052CB2A /* Main.storyboard */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8106EC6D23369C3600F2C996 /* BillAPIManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BillAPIManager.h; sourceTree = "<group>"; };
+		8106EC6E23369C3600F2C996 /* BillAPIManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BillAPIManager.m; sourceTree = "<group>"; };
 		8183FD922335EAC10052CB2A /* rmpdbill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rmpdbill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8183FD952335EAC10052CB2A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8183FD962335EAC10052CB2A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -99,6 +102,8 @@
 		8183FDAD2335F0C60052CB2A /* APIManager */ = {
 			isa = PBXGroup;
 			children = (
+				8106EC6D23369C3600F2C996 /* BillAPIManager.h */,
+				8106EC6E23369C3600F2C996 /* BillAPIManager.m */,
 			);
 			path = APIManager;
 			sourceTree = "<group>";
@@ -116,7 +121,6 @@
 				A908606C489F5F3250420393 /* Pods-rmpdbill.debug.xcconfig */,
 				92F8D23045311FCFC36D6545 /* Pods-rmpdbill.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -139,6 +143,7 @@
 				8183FD8E2335EAC10052CB2A /* Sources */,
 				8183FD8F2335EAC10052CB2A /* Frameworks */,
 				8183FD902335EAC10052CB2A /* Resources */,
+				83D515440B793C4BB61499A0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -217,6 +222,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		83D515440B793C4BB61499A0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rmpdbill/Pods-rmpdbill-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rmpdbill/Pods-rmpdbill-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rmpdbill/Pods-rmpdbill-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -227,6 +249,7 @@
 				8183FD9A2335EAC10052CB2A /* ViewController.m in Sources */,
 				8183FDA52335EAC20052CB2A /* main.m in Sources */,
 				8183FD972335EAC10052CB2A /* AppDelegate.m in Sources */,
+				8106EC6F23369C3600F2C996 /* BillAPIManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
