@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		362F0F9E5163A3E576CC6D6E /* Pods_rmpdbill.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF429FB718E49621E8FFB844 /* Pods_rmpdbill.framework */; };
 		8183FD972335EAC10052CB2A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8183FD962335EAC10052CB2A /* AppDelegate.m */; };
 		8183FD9A2335EAC10052CB2A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8183FD992335EAC10052CB2A /* ViewController.m */; };
 		8183FD9D2335EAC10052CB2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8183FD9B2335EAC10052CB2A /* Main.storyboard */; };
@@ -26,6 +27,9 @@
 		8183FDA12335EAC20052CB2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8183FDA32335EAC20052CB2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8183FDA42335EAC20052CB2A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		92F8D23045311FCFC36D6545 /* Pods-rmpdbill.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rmpdbill.release.xcconfig"; path = "Target Support Files/Pods-rmpdbill/Pods-rmpdbill.release.xcconfig"; sourceTree = "<group>"; };
+		A908606C489F5F3250420393 /* Pods-rmpdbill.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rmpdbill.debug.xcconfig"; path = "Target Support Files/Pods-rmpdbill/Pods-rmpdbill.debug.xcconfig"; sourceTree = "<group>"; };
+		CF429FB718E49621E8FFB844 /* Pods_rmpdbill.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rmpdbill.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				362F0F9E5163A3E576CC6D6E /* Pods_rmpdbill.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				8183FD942335EAC10052CB2A /* rmpdbill */,
 				8183FD932335EAC10052CB2A /* Products */,
+				F007A7B64D690DB9F7F0B694 /* Pods */,
+				F10F90EE58AB5F50B0168BB4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +65,10 @@
 		8183FD942335EAC10052CB2A /* rmpdbill */ = {
 			isa = PBXGroup;
 			children = (
+				8183FDAE2335F0CD0052CB2A /* Models */,
+				8183FDAD2335F0C60052CB2A /* APIManager */,
+				8183FDAC2335F0BC0052CB2A /* Views */,
+				8183FDAB2335F08B0052CB2A /* Features */,
 				8183FD952335EAC10052CB2A /* AppDelegate.h */,
 				8183FD962335EAC10052CB2A /* AppDelegate.m */,
 				8183FD982335EAC10052CB2A /* ViewController.h */,
@@ -71,6 +82,52 @@
 			path = rmpdbill;
 			sourceTree = "<group>";
 		};
+		8183FDAB2335F08B0052CB2A /* Features */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		8183FDAC2335F0BC0052CB2A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8183FDAD2335F0C60052CB2A /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = APIManager;
+			sourceTree = "<group>";
+		};
+		8183FDAE2335F0CD0052CB2A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F007A7B64D690DB9F7F0B694 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A908606C489F5F3250420393 /* Pods-rmpdbill.debug.xcconfig */,
+				92F8D23045311FCFC36D6545 /* Pods-rmpdbill.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F10F90EE58AB5F50B0168BB4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF429FB718E49621E8FFB844 /* Pods_rmpdbill.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,6 +135,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8183FDA82335EAC20052CB2A /* Build configuration list for PBXNativeTarget "rmpdbill" */;
 			buildPhases = (
+				14E42254D3C78AD2CBA956D7 /* [CP] Check Pods Manifest.lock */,
 				8183FD8E2335EAC10052CB2A /* Sources */,
 				8183FD8F2335EAC10052CB2A /* Frameworks */,
 				8183FD902335EAC10052CB2A /* Resources */,
@@ -135,6 +193,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14E42254D3C78AD2CBA956D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-rmpdbill-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8183FD8E2335EAC10052CB2A /* Sources */ = {
@@ -283,6 +366,7 @@
 		};
 		8183FDA92335EAC20052CB2A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A908606C489F5F3250420393 /* Pods-rmpdbill.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +384,7 @@
 		};
 		8183FDAA2335EAC20052CB2A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92F8D23045311FCFC36D6545 /* Pods-rmpdbill.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
