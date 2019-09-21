@@ -7,6 +7,7 @@
 //
 
 #import "CreateViewController.h"
+#import "ZXingObjC.h"
 
 @interface CreateViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
@@ -24,9 +25,32 @@
 }
 
 - (IBAction)didTapGenerateQRCode:(id)sender {
+    NSDictionary *customerInfo = @{@"name": self.nameTextField.text, @"email": self.emailTextField.text, @"phone": self.phoneTextField.text};
+    
+    NSError *error = nil;
+    ZXMultiFormatWriter *writer = [ZXMultiFormatWriter writer];
+    ZXBitMatrix* result = [writer encode:[NSString stringWithFormat:@"%@", customerInfo]
+                                  format:kBarcodeFormatQRCode
+                                   width:500
+                                  height:500
+                                   error:&error];
+    if (result) {
+        CGImageRef imageRef = CGImageRetain([[ZXImage imageWithMatrix:result] cgimage]);
+        UIImage* uiImage = [[UIImage alloc] initWithCGImage:imageRef];
+        [self.codeQR setImage:uiImage];
+        
+        CGImageRelease(imageRef);
+    } else {
+        NSString *errorMessage = [error localizedDescription];
+        NSLog(@"%@", errorMessage);
+    }
 }
 
 - (IBAction)didTapScanner:(id)sender {
+}
+
+- (IBAction)didTapLogout:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 /*

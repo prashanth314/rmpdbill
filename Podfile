@@ -7,5 +7,6 @@ target 'rmpdbill' do
 
   # Pods for rmpdbill
   pod 'AFNetworking'
+  pod 'ZXingObjC'
 
 end
