@@ -18,7 +18,7 @@
         <!--Create View Controller-->
         <scene sceneID="I2J-6X-Ach">
             <objects>
-                <viewController id="fdj-TX-jX5" customClass="CreateViewController" sceneMemberID="viewController">
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="fdj-TX-jX5" customClass="CreateViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y9J-9C-7nr">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -95,7 +95,7 @@
         <!--Navigation Controller-->
         <scene sceneID="RWf-dc-FGC">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Z09-bJ-Gye" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="create" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Z09-bJ-Gye" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NmH-mG-72S">
                         <rect key="frame" x="0.0" y="20" width="768" height="50"/>

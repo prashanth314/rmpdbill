@@ -33,13 +33,17 @@
 - (IBAction)didTapLogin:(id)sender {
     // static NSString *BASEURLString = @"https://app-sandbox.bill.com/api/v2";
     static NSString *devKey = @"01JFJIGOPULHADWJD201";
+    static NSString *orgID = @"00801QJPXQYLFLZUTme6";
     
     static NSString *LOGINURLString = @"https://app-sandbox.bill.com/api/v2/Login.json";
-    NSDictionary *dictParameters = @{@"userName": self.usernameField.text, @"password": self.passwordField.text, @"orgId": self.orgIDField.text, @"devKey": devKey};
+    NSDictionary *dictParameters = @{@"userName": self.usernameField.text, @"password": self.passwordField.text, @"orgId": orgID, @"devKey": devKey};
     
     AFHTTPSessionManager *manager =  [AFHTTPSessionManager manager];
     [manager GET:LOGINURLString parameters:dictParameters progress:nil success:^(NSURLSessionTask *task, id responseObject) {
-        NSLog(@"JSON: %@", responseObject);
+        
+        [self performSegueWithIdentifier:@"createSegue" sender:nil];
+        
+        
     } failure:^(NSURLSessionTask *operation, NSError *error) {
         NSLog(@"Error: %@", error);
     }];
