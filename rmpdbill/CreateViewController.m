@@ -65,6 +65,11 @@
     [self dismissViewControllerAnimated:YES completion:nil];
     [self performSegueWithIdentifier:@"recieverSegue" sender:nil];
 }
+- (IBAction)didTapCreateView:(id)sender {
+    [self.view endEditing:YES];
+}
+
+
 
 
 #pragma mark - Navigation

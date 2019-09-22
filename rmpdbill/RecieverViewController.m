@@ -45,9 +45,6 @@
         // result.rawBytes and result.length.
         NSString *contents = result.text;
         
-        // The barcode format, such as a QR code or UPC-A
-        ZXBarcodeFormat format = result.barcodeFormat;
-        
         NSString *display = [NSString stringWithFormat:@"%@", contents];
         
         NSArray *infoArray = [display componentsSeparatedByString:@";"];
@@ -57,65 +54,16 @@
         self.emailTextField.text = [infoArray[3] componentsSeparatedByString:@"'"][1];
         self.phoneTextField.text = [infoArray[10] componentsSeparatedByString:@"'"][1];
         
+        // After recieving the needed information from the QR Code an API request could be made to then register new relation
+        
     } else {
         // Use error to determine why we didn't get a result, such as a barcode
         // not being found, an invalid checksum, or a format inconsistency.
     }
 }
 
-- (NSString *)barcodeFormatToString:(ZXBarcodeFormat)format {
-    switch (format) {
-        case kBarcodeFormatAztec:
-            return @"Aztec";
-            
-        case kBarcodeFormatCodabar:
-            return @"CODABAR";
-            
-        case kBarcodeFormatCode39:
-            return @"Code 39";
-            
-        case kBarcodeFormatCode93:
-            return @"Code 93";
-            
-        case kBarcodeFormatCode128:
-            return @"Code 128";
-            
-        case kBarcodeFormatDataMatrix:
-            return @"Data Matrix";
-            
-        case kBarcodeFormatEan8:
-            return @"EAN-8";
-            
-        case kBarcodeFormatEan13:
-            return @"EAN-13";
-            
-        case kBarcodeFormatITF:
-            return @"ITF";
-            
-        case kBarcodeFormatPDF417:
-            return @"PDF417";
-            
-        case kBarcodeFormatQRCode:
-            return @"QR Code";
-            
-        case kBarcodeFormatRSS14:
-            return @"RSS 14";
-            
-        case kBarcodeFormatRSSExpanded:
-            return @"RSS Expanded";
-            
-        case kBarcodeFormatUPCA:
-            return @"UPCA";
-            
-        case kBarcodeFormatUPCE:
-            return @"UPCE";
-            
-        case kBarcodeFormatUPCEANExtension:
-            return @"UPC/EAN extension";
-            
-        default:
-            return @"Unknown";
-    }
+- (IBAction)didTapRecieverView:(id)sender {
+    [self.view endEditing:YES];
 }
 
 /*

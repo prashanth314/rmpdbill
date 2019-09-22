@@ -23,56 +23,84 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email: " borderStyle="roundedRect" placeholder="Email" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KxG-lI-eNF">
-                                <rect key="frame" x="40" y="252" width="399" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email: " borderStyle="roundedRect" placeholder="Email" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KxG-lI-eNF">
+                                <rect key="frame" x="40" y="243" width="416" height="35"/>
                                 <color key="backgroundColor" red="0.94118028880000004" green="0.94116526840000003" blue="0.94118517639999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" textContentType="username"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name: " borderStyle="roundedRect" placeholder="Name" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QWG-cY-IcL">
-                                <rect key="frame" x="40" y="176" width="399" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="753" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name: " borderStyle="roundedRect" placeholder="Name" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QWG-cY-IcL">
+                                <rect key="frame" x="40" y="178" width="416" height="35"/>
+                                <color key="backgroundColor" red="0.94118028880000004" green="0.94116526840000003" blue="0.94118517639999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="kal-lI-SIk"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" textContentType="username"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Phone: " borderStyle="roundedRect" placeholder="Phone" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WXC-3P-v2v">
+                                <rect key="frame" x="40" y="308" width="416" height="35"/>
                                 <color key="backgroundColor" red="0.94118028880000004" green="0.94116526840000003" blue="0.94118517639999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" textContentType="username"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Phone: " borderStyle="roundedRect" placeholder="Phone" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WXC-3P-v2v">
-                                <rect key="frame" x="40" y="326" width="399" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.94118028880000004" green="0.94116526840000003" blue="0.94118517639999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" textContentType="username"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yyx-VJ-F0K">
-                                <rect key="frame" x="40" y="95" width="207" height="73"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Seller Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yyx-VJ-F0K">
+                                <rect key="frame" x="40" y="100" width="261" height="48"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y7h-Ja-Utv">
-                                <rect key="frame" x="134" y="430" width="500" height="500"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbT-YB-PjM">
-                                <rect key="frame" x="480" y="176" width="244" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbT-YB-PjM">
+                                <rect key="frame" x="471" y="178" width="257" height="35"/>
                                 <color key="backgroundColor" red="0.9407457709" green="0.56144821639999998" blue="0.23516866559999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="30"/>
-                                <state key="normal" title="Generate">
+                                <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" title="Generate QR Code">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="didTapGenerateQRCode:" destination="fdj-TX-jX5" eventType="touchUpInside" id="OCX-As-vTO"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y7h-Ja-Utv">
+                                <rect key="frame" x="134" y="449" width="500" height="500"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="8bm-Td-IME"/>
+                                    <constraint firstAttribute="width" constant="500" id="u0R-TY-dF4"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Y7h-Ja-Utv" firstAttribute="top" relation="greaterThanOrEqual" secondItem="WXC-3P-v2v" secondAttribute="bottom" constant="75" id="0Lg-IS-Lq0"/>
+                            <constraint firstItem="WXC-3P-v2v" firstAttribute="width" secondItem="KxG-lI-eNF" secondAttribute="width" id="0ub-Ob-bOi"/>
+                            <constraint firstItem="PsX-TE-Qtb" firstAttribute="trailing" secondItem="fbT-YB-PjM" secondAttribute="trailing" constant="40" id="2Ta-ef-6Dm"/>
+                            <constraint firstItem="WXC-3P-v2v" firstAttribute="top" secondItem="KxG-lI-eNF" secondAttribute="bottom" constant="30" id="4xm-ms-dkr"/>
+                            <constraint firstItem="QWG-cY-IcL" firstAttribute="leading" secondItem="yyx-VJ-F0K" secondAttribute="leading" id="950-cS-8Ep"/>
+                            <constraint firstItem="KxG-lI-eNF" firstAttribute="leading" secondItem="QWG-cY-IcL" secondAttribute="leading" id="Aqz-6Y-2sf"/>
+                            <constraint firstItem="KxG-lI-eNF" firstAttribute="height" secondItem="QWG-cY-IcL" secondAttribute="height" id="C5N-Je-CQh"/>
+                            <constraint firstItem="PsX-TE-Qtb" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yyx-VJ-F0K" secondAttribute="trailing" constant="20" id="GFK-jJ-1FY"/>
+                            <constraint firstItem="QWG-cY-IcL" firstAttribute="top" secondItem="yyx-VJ-F0K" secondAttribute="bottom" constant="30" id="I8O-Dz-ZcQ"/>
+                            <constraint firstItem="KxG-lI-eNF" firstAttribute="width" secondItem="QWG-cY-IcL" secondAttribute="width" id="Mul-2P-seX"/>
+                            <constraint firstItem="WXC-3P-v2v" firstAttribute="leading" secondItem="KxG-lI-eNF" secondAttribute="leading" id="PD2-Mz-K7H"/>
+                            <constraint firstItem="yyx-VJ-F0K" firstAttribute="top" secondItem="PsX-TE-Qtb" secondAttribute="top" constant="30" id="PRn-BF-VpP"/>
+                            <constraint firstItem="fbT-YB-PjM" firstAttribute="leading" secondItem="QWG-cY-IcL" secondAttribute="trailing" constant="15" id="QKr-Pr-163"/>
+                            <constraint firstItem="Y7h-Ja-Utv" firstAttribute="centerX" secondItem="PsX-TE-Qtb" secondAttribute="centerX" id="XTI-Au-BR3"/>
+                            <constraint firstItem="KxG-lI-eNF" firstAttribute="top" secondItem="QWG-cY-IcL" secondAttribute="bottom" constant="30" id="fl6-zO-KM6"/>
+                            <constraint firstItem="fbT-YB-PjM" firstAttribute="bottom" secondItem="QWG-cY-IcL" secondAttribute="bottom" id="g1M-bG-BSD"/>
+                            <constraint firstItem="fbT-YB-PjM" firstAttribute="top" secondItem="QWG-cY-IcL" secondAttribute="top" id="itk-n4-5dG"/>
+                            <constraint firstItem="yyx-VJ-F0K" firstAttribute="leading" secondItem="PsX-TE-Qtb" secondAttribute="leading" constant="40" id="oMy-AZ-8Qa"/>
+                            <constraint firstItem="WXC-3P-v2v" firstAttribute="height" secondItem="KxG-lI-eNF" secondAttribute="height" id="ruL-C5-Sw4"/>
+                            <constraint firstItem="PsX-TE-Qtb" firstAttribute="bottom" secondItem="Y7h-Ja-Utv" secondAttribute="bottom" constant="75" id="zFX-76-mu8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="PsX-TE-Qtb"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="chX-dm-XQo" appends="YES" id="vzL-gd-Xte"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="t3v-su-ylN">
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="bYm-A6-TsK">
@@ -95,6 +123,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uBG-0O-Ggv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="chX-dm-XQo">
+                    <connections>
+                        <action selector="didTapCreateView:" destination="fdj-TX-jX5" id="IaP-hj-zAX"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="903.90625" y="119.53124999999999"/>
         </scene>
