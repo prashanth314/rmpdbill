@@ -8,13 +8,14 @@
 
 #import "CreateViewController.h"
 #import "ZXingObjC.h"
+#import "RecieverViewController.h"
 
 @interface CreateViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
 @property (weak, nonatomic) IBOutlet UITextField *phoneTextField;
 @property (weak, nonatomic) IBOutlet UIImageView *codeQR;
-
+@property (strong, nonatomic) UIImage *encodedImage;
 @end
 
 @implementation CreateViewController
@@ -60,21 +61,24 @@
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info {
-    UIImage *selectedImage = info[UIImagePickerControllerOriginalImage];
-    [self.codeQR setImage:selectedImage];
-    
-    
+    self.encodedImage = info[UIImagePickerControllerOriginalImage];
     [self dismissViewControllerAnimated:YES completion:nil];
+    [self performSegueWithIdentifier:@"recieverSegue" sender:nil];
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    
+    if ([segue.identifier isEqualToString:@"recieverSegue"]){
+        RecieverViewController *recieverController = [segue destinationViewController];
+        recieverController.imageToDecode = self.encodedImage;
+    };
 }
-*/
+
 
 @end

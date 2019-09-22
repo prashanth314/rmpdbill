@@ -7,8 +7,11 @@
 //
 
 #import "RecieverViewController.h"
+#import "AFNetworking.h"
+#import "ZXingObjC.h"
 
 @interface RecieverViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *testQR;
 
 @end
 
@@ -16,7 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self.testQR setImage:self.imageToDecode];
 }
 
 /*

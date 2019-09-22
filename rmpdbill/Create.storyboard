@@ -91,6 +91,7 @@
                         <outlet property="emailTextField" destination="KxG-lI-eNF" id="ygA-wL-Rxt"/>
                         <outlet property="nameTextField" destination="QWG-cY-IcL" id="qKZ-GI-zH5"/>
                         <outlet property="phoneTextField" destination="WXC-3P-v2v" id="2W2-KG-atR"/>
+                        <segue destination="afz-bA-Nbs" kind="show" identifier="recieverSegue" id="yTG-Bh-UwE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uBG-0O-Ggv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -114,6 +115,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2AI-tB-6so" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="138.28125" y="119.53124999999999"/>
+        </scene>
+        <!--Reciever-->
+        <scene sceneID="ya1-PN-cHd">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="reciever" storyboardName="Reciever" referencedIdentifier="Reciever" id="afz-bA-Nbs" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Gv-8i-LRE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1434" y="120"/>
         </scene>
     </scenes>
 </document>
