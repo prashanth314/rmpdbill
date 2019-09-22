@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		362F0F9E5163A3E576CC6D6E /* Pods_rmpdbill.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF429FB718E49621E8FFB844 /* Pods_rmpdbill.framework */; };
 		7B2D47F52336D1D5002D0928 /* Create.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B2D47F42336D1D5002D0928 /* Create.storyboard */; };
-		8106EC6F23369C3600F2C996 /* BillAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8106EC6E23369C3600F2C996 /* BillAPIManager.m */; };
 		8106EC972336D5CC00F2C996 /* CreateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8106EC962336D5CC00F2C996 /* CreateViewController.m */; };
 		8106EC9A2336E37100F2C996 /* RecieverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8106EC992336E37100F2C996 /* RecieverViewController.m */; };
 		8106EC9E2336E3D700F2C996 /* Reciever.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8106EC9D2336E3D700F2C996 /* Reciever.storyboard */; };
@@ -23,8 +22,6 @@
 
 /* Begin PBXFileReference section */
 		7B2D47F42336D1D5002D0928 /* Create.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Create.storyboard; sourceTree = "<group>"; };
-		8106EC6D23369C3600F2C996 /* BillAPIManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BillAPIManager.h; sourceTree = "<group>"; };
-		8106EC6E23369C3600F2C996 /* BillAPIManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BillAPIManager.m; sourceTree = "<group>"; };
 		8106EC952336D5CC00F2C996 /* CreateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreateViewController.h; sourceTree = "<group>"; };
 		8106EC962336D5CC00F2C996 /* CreateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreateViewController.m; sourceTree = "<group>"; };
 		8106EC982336E37100F2C996 /* RecieverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecieverViewController.h; sourceTree = "<group>"; };
@@ -78,10 +75,6 @@
 		8183FD942335EAC10052CB2A /* rmpdbill */ = {
 			isa = PBXGroup;
 			children = (
-				8183FDAE2335F0CD0052CB2A /* Models */,
-				8183FDAD2335F0C60052CB2A /* APIManager */,
-				8183FDAC2335F0BC0052CB2A /* Views */,
-				8183FDAB2335F08B0052CB2A /* Features */,
 				8183FD952335EAC10052CB2A /* AppDelegate.h */,
 				8183FD962335EAC10052CB2A /* AppDelegate.m */,
 				8106EC982336E37100F2C996 /* RecieverViewController.h */,
@@ -99,36 +92,6 @@
 				8183FDA42335EAC20052CB2A /* main.m */,
 			);
 			path = rmpdbill;
-			sourceTree = "<group>";
-		};
-		8183FDAB2335F08B0052CB2A /* Features */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Features;
-			sourceTree = "<group>";
-		};
-		8183FDAC2335F0BC0052CB2A /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		8183FDAD2335F0C60052CB2A /* APIManager */ = {
-			isa = PBXGroup;
-			children = (
-				8106EC6D23369C3600F2C996 /* BillAPIManager.h */,
-				8106EC6E23369C3600F2C996 /* BillAPIManager.m */,
-			);
-			path = APIManager;
-			sourceTree = "<group>";
-		};
-		8183FDAE2335F0CD0052CB2A /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		F007A7B64D690DB9F7F0B694 /* Pods */ = {
@@ -269,7 +232,6 @@
 				8106EC972336D5CC00F2C996 /* CreateViewController.m in Sources */,
 				8106EC9A2336E37100F2C996 /* RecieverViewController.m in Sources */,
 				8183FD972335EAC10052CB2A /* AppDelegate.m in Sources */,
-				8106EC6F23369C3600F2C996 /* BillAPIManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

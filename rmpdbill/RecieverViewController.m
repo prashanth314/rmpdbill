@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
 @property (weak, nonatomic) IBOutlet UITextField *phoneTextField;
+@property (weak, nonatomic) IBOutlet UIButton *registerButton;
 
 @end
 
@@ -21,6 +22,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.registerButton.layer.cornerRadius = 5;
+    self.registerButton.clipsToBounds = YES;
     [self setupTextFields];
     
 }

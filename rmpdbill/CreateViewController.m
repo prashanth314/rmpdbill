@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
 @property (weak, nonatomic) IBOutlet UITextField *phoneTextField;
 @property (weak, nonatomic) IBOutlet UIImageView *codeQR;
+@property (weak, nonatomic) IBOutlet UIButton *genQRButton;
 @property (strong, nonatomic) UIImage *encodedImage;
 @end
 
@@ -22,7 +23,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.genQRButton.layer.cornerRadius = 5;
+    self.genQRButton.clipsToBounds = YES;
 }
 
 - (IBAction)didTapGenerateQRCode:(id)sender {

@@ -18,19 +18,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bill.com logo" translatesAutoresizingMaskIntoConstraints="NO" id="y8b-h2-NlJ">
-                                <rect key="frame" x="124" y="228" width="520" height="415"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RMPD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2I-WO-O5x">
-                                <rect key="frame" x="172" y="169" width="425" height="143"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RMPD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2I-WO-O5x">
+                                <rect key="frame" x="203" y="170" width="362.5" height="137.5"/>
                                 <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="123"/>
                                 <color key="textColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bill.com logo" translatesAutoresizingMaskIntoConstraints="NO" id="y8b-h2-NlJ">
+                                <rect key="frame" x="134" y="227.5" width="500" height="420"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="420" id="2H7-mb-OxR"/>
+                                    <constraint firstAttribute="width" constant="500" id="tzc-Fg-b5D"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="y8b-h2-NlJ" firstAttribute="top" secondItem="V2I-WO-O5x" secondAttribute="bottom" constant="-80" id="InE-6O-u7c"/>
+                            <constraint firstItem="V2I-WO-O5x" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="MIB-l6-9aR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="y8b-h2-NlJ" secondAttribute="bottom" constant="50" id="OMc-c4-fRJ"/>
+                            <constraint firstItem="y8b-h2-NlJ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="U0l-mD-COh"/>
+                            <constraint firstItem="V2I-WO-O5x" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="yQe-s2-Mkx"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>

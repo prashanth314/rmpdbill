@@ -23,15 +23,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bill.com logo" translatesAutoresizingMaskIntoConstraints="NO" id="eYN-Sa-zmj">
+                                <rect key="frame" x="259" y="150" width="250" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Mgd-bq-V3y"/>
+                                    <constraint firstAttribute="width" constant="250" id="bq1-RW-no1"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QR Code Scanner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qa0-3C-YEF">
+                                <rect key="frame" x="262" y="280" width="244" height="35"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" placeholder="Password" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gBk-vf-Rso">
-                                <rect key="frame" x="184" y="460" width="400" height="35"/>
+                                <rect key="frame" x="184" y="485" width="400" height="35"/>
                                 <color key="backgroundColor" red="0.94118028880000004" green="0.94116526840000003" blue="0.94118517639999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SCJ-aL-W80">
-                                <rect key="frame" x="184" y="525" width="400" height="45"/>
+                                <rect key="frame" x="184" y="550" width="400" height="45"/>
                                 <color key="backgroundColor" red="0.9407457709312439" green="0.56144821643829346" blue="0.23516866564750671" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="2Aq-RY-hVd"/>
@@ -45,14 +58,14 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Organization ID" borderStyle="roundedRect" placeholder="OrgID" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fzx-lE-kxb">
-                                <rect key="frame" x="184" y="395" width="400" height="35"/>
+                                <rect key="frame" x="184" y="420" width="400" height="35"/>
                                 <color key="backgroundColor" red="0.94118028880000004" green="0.94116526840000003" blue="0.94118517639999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" textContentType="username"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Username" borderStyle="roundedRect" placeholder="Username" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0BF-Rx-8sS">
-                                <rect key="frame" x="184" y="330" width="400" height="35"/>
+                                <rect key="frame" x="184" y="355" width="400" height="35"/>
                                 <color key="backgroundColor" red="0.94118028880000004" green="0.94116526840000003" blue="0.94118517639999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="400" id="041-kX-Xso"/>
@@ -62,18 +75,11 @@
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" textContentType="username"/>
                             </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bill.com logo" translatesAutoresizingMaskIntoConstraints="NO" id="eYN-Sa-zmj">
-                                <rect key="frame" x="259" y="150" width="250" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="Mgd-bq-V3y"/>
-                                    <constraint firstAttribute="width" constant="250" id="bq1-RW-no1"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="0BF-Rx-8sS" firstAttribute="top" secondItem="eYN-Sa-zmj" secondAttribute="bottom" constant="30" id="7Ww-Fl-5g7"/>
+                            <constraint firstItem="0BF-Rx-8sS" firstAttribute="top" secondItem="Qa0-3C-YEF" secondAttribute="bottom" constant="40" id="65J-ob-Aup"/>
                             <constraint firstItem="SCJ-aL-W80" firstAttribute="centerX" secondItem="eYN-Sa-zmj" secondAttribute="centerX" id="9I1-me-jIP"/>
                             <constraint firstItem="gBk-vf-Rso" firstAttribute="centerX" secondItem="eYN-Sa-zmj" secondAttribute="centerX" id="GDf-yr-e5g"/>
                             <constraint firstItem="gBk-vf-Rso" firstAttribute="width" secondItem="fzx-lE-kxb" secondAttribute="width" id="IW4-u4-sIp"/>
@@ -87,7 +93,9 @@
                             <constraint firstItem="fzx-lE-kxb" firstAttribute="height" secondItem="0BF-Rx-8sS" secondAttribute="height" id="aM1-bC-ydc"/>
                             <constraint firstItem="gBk-vf-Rso" firstAttribute="top" secondItem="fzx-lE-kxb" secondAttribute="bottom" constant="30" id="aXR-Rb-6F3"/>
                             <constraint firstItem="fzx-lE-kxb" firstAttribute="width" secondItem="0BF-Rx-8sS" secondAttribute="width" id="gd4-zR-tUJ"/>
+                            <constraint firstItem="Qa0-3C-YEF" firstAttribute="top" secondItem="eYN-Sa-zmj" secondAttribute="bottom" constant="-20" id="or3-yD-9bk"/>
                             <constraint firstItem="gBk-vf-Rso" firstAttribute="height" secondItem="fzx-lE-kxb" secondAttribute="height" id="vPE-KK-zr6"/>
+                            <constraint firstItem="Qa0-3C-YEF" firstAttribute="centerX" secondItem="eYN-Sa-zmj" secondAttribute="centerX" id="vd1-ow-8rE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <connections>

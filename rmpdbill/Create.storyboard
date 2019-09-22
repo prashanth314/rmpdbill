@@ -24,14 +24,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email: " borderStyle="roundedRect" placeholder="Email" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KxG-lI-eNF">
-                                <rect key="frame" x="40" y="243" width="416" height="35"/>
+                                <rect key="frame" x="40" y="243" width="396" height="35"/>
                                 <color key="backgroundColor" red="0.94118028880000004" green="0.94116526840000003" blue="0.94118517639999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" textContentType="username"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="753" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name: " borderStyle="roundedRect" placeholder="Name" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QWG-cY-IcL">
-                                <rect key="frame" x="40" y="178" width="416" height="35"/>
+                                <rect key="frame" x="40" y="178" width="396" height="35"/>
                                 <color key="backgroundColor" red="0.94118028880000004" green="0.94116526840000003" blue="0.94118517639999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="kal-lI-SIk"/>
@@ -41,7 +41,7 @@
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" textContentType="username"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Phone: " borderStyle="roundedRect" placeholder="Phone" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WXC-3P-v2v">
-                                <rect key="frame" x="40" y="308" width="416" height="35"/>
+                                <rect key="frame" x="40" y="308" width="396" height="35"/>
                                 <color key="backgroundColor" red="0.94118028880000004" green="0.94116526840000003" blue="0.94118517639999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
@@ -54,10 +54,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbT-YB-PjM">
-                                <rect key="frame" x="471" y="178" width="257" height="35"/>
+                                <rect key="frame" x="451" y="178" width="277" height="35"/>
                                 <color key="backgroundColor" red="0.9407457709" green="0.56144821639999998" blue="0.23516866559999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="30"/>
-                                <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
                                 <state key="normal" title="Generate QR Code">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -117,6 +117,7 @@
                     <connections>
                         <outlet property="codeQR" destination="Y7h-Ja-Utv" id="bmE-cD-hD9"/>
                         <outlet property="emailTextField" destination="KxG-lI-eNF" id="ygA-wL-Rxt"/>
+                        <outlet property="genQRButton" destination="fbT-YB-PjM" id="GFc-or-uTq"/>
                         <outlet property="nameTextField" destination="QWG-cY-IcL" id="qKZ-GI-zH5"/>
                         <outlet property="phoneTextField" destination="WXC-3P-v2v" id="2W2-KG-atR"/>
                         <segue destination="afz-bA-Nbs" kind="show" identifier="recieverSegue" id="yTG-Bh-UwE"/>
