@@ -55,10 +55,6 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GXn-Mh-dQs">
-                                <rect key="frame" x="115" y="653" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name: " borderStyle="roundedRect" placeholder="Username" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="icw-UR-xJ2">
                                 <rect key="frame" x="76" y="208" width="399" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -73,7 +69,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="Tio-5P-MJQ"/>
                     <connections>
-                        <outlet property="testQR" destination="GXn-Mh-dQs" id="qee-rm-esO"/>
+                        <outlet property="emailTextField" destination="NL7-qM-TDx" id="4yB-kn-9Ud"/>
+                        <outlet property="nameTextField" destination="icw-UR-xJ2" id="mMm-8L-OAi"/>
+                        <outlet property="phoneTextField" destination="mBX-7h-t3i" id="8li-9I-PBc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ta3-kE-cnb" userLabel="First Responder" sceneMemberID="firstResponder"/>
